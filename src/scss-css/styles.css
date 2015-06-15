@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  color: white; }
+
+h1 {
+  font-size: 24px; }
+
+h2 {
+  font-size: 22px; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 12px; }
+
+h6 {
+  font-size: 10px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Arvo', serif; }
+
+h2, h3, h4, h5 {
+  font-weight: normal; }
+
+.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto; }
+
+h1, h2, h3 {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.section-title .group {
+  height: 125px; }
+  .section-title .group .title {
+    background-color: #25dfcb;
+    height: 50%; }
+  .section-title .group .headline {
+    background-color: #91eee4;
+    height: 50%; }
+    .section-title .group .headline #button {
+      display: block;
+      height: 100%; }
+
+.section-locations .hide {
+  display: none; }
+.section-locations .slide_down {
+  -webkit-animation-name: slide_down;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: forwards; }
+.section-locations .slide_up {
+  -webkit-animation-name: slide_up;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in;
+  -webkit-animation-fill-mode: forwards; }
+.section-locations .ocean {
+  z-index: -20;
+  height: 475px;
+  position: relative;
+  background-color: #dbe5e3;
+  background-image: url("../../images/ocean.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center; }
+
+@-webkit-keyframes slide_down {
+  from {
+    -webkit-transform: translateY(-700px); }
+
+  to {
+    -webkit-transform: translateY(0px); } }
+@-webkit-keyframes slide_up {
+  from {
+    -webkit-transform: translateY(0px); }
+
+  to {
+    -webkit-transform: translateY(-700px); } }
